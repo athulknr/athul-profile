@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Athul Kannoth | Developer Profile</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <!-- Bootstrap 4 -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Noto Sans', sans-serif;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    .container {
+      padding: 40px 15px;
+    }
+
+    .card {
+      color: #fff;
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      margin: auto;
+      background: linear-gradient(145deg, #9a40a9, #b74cc9);
+      box-shadow: 20px 20px 60px #913ca0, -20px -20px 60px #c552d8;
+      border: none;
+    }
+
+    .card img {
+      border: 4px solid #fff;
+    }
+
+    .neo-button {
+      width: 40px;
+      height: 40px;
+      outline: 0 !important;
+      cursor: pointer;
+      color: #fff;
+      font-size: 15px;
+      border: none;
+      margin-right: 10px;
+      border-radius: 50%;
+      background: linear-gradient(145deg, #9a40a9, #b74cc9);
+      box-shadow: inset 20px 20px 60px #913ca0, inset -20px -20px 60px #c552d8;
+    }
+
+    .neo-button:active {
+      background: #AB47BC;
+      box-shadow: 28px 28px 57px #933da2, -28px -28px 57px #c351d6;
+    }
+
+    .profile_button {
+      color: #fff;
+      padding: 10px 30px;
+      border: none;
+      outline: 0 !important;
+      border-radius: 50px;
+      background: #AB47BC;
+      box-shadow: 28px 28px 57px #933da2, -28px -28px 57px #c351d6;
+      transition: 0.3s ease;
+    }
+
+    .profile_button:hover {
+      transform: scale(1.05);
+    }
+
+    .fa-facebook { color: #3b5998 }
+    .fa-linkedin { color: #0077b5 }
+    .fa-google { color: #dc4e41 }
+    .fa-youtube { color: #cd201f }
+    .fa-twitter { color: #55acee }
+
+    .num {
+      font-weight: bold;
+      font-size: 18px;
+      display: block;
+      color: #eee !important;
+    }
+
+    hr.line {
+      border-top: 1px solid #fff;
+      opacity: 0.5;
+    }
+
+    @media(max-width: 576px){
+      .neo-button {
+        margin-right: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container d-flex justify-content-center">
+    <div class="card p-4">
+      <div class="text-center">
+        <img src="IMG_20210411_213906.jpg" width="100" class="rounded-circle mb-3" alt="Profile Image">
+        <h3 class="mt-2">Athul Kannoth</h3>
+        <span class="mt-1 d-block">Creative Web Developer | AI + Design Enthusiast</span>
+
+        <div class="row mt-4 mb-3">
+          <div class="col-md-4">
+            <h6></h6>
+            <span class="num"></span>
+          </div>
+          <div class="col-md-4">
+            <h6></h6>
+            <span class="num"></span>
+          </div>
+          <div class="col-md-4">
+            <h6></h6>
+            <span class="num"></span>
+          </div>
+        </div>
+
+        <hr class="line">
+
+        <small class="mt-3 d-block">I craft accessible, animated UI components & smart web solutions using modern tech & AI.</small>
+
+        <div class="social-buttons mt-4">
+          <button class="neo-button" onclick="window.open('https://www.facebook.com','_blank')"><i class="fa fa-facebook"></i></button>
+          <button class="neo-button" onclick="window.open('https://www.linkedin.com/in/athul-k-4107b5180','_blank')"><i class="fa fa-linkedin"></i></button>
+          <button class="neo-button" onclick="window.open('mailto:athulk666@gmail.com')"><i class="fa fa-envelope"></i></button>
+          <button class="neo-button" onclick="window.open('https://https://github.com/athulknr','_blank')"><i class="fa fa-github"></i></button>
+          <button class="neo-button" onclick="window.open('https://x.com/athulkannoth','_blank')"><i class="fa fa-twitter"></i></button>
+        </div>
+
+        <div class="profile mt-4">
+          <a href="https://athulknr.github.io/Athul/" target="_blank">
+            <button class="profile_button">View Portfolio</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
