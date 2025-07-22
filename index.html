@@ -44,22 +44,43 @@
     }
 
     .neo-button {
-      width: 40px;
-      height: 40px;
-      outline: 0 !important;
-      cursor: pointer;
-      color: #fff;
-      font-size: 15px;
+      width: 45px;
+      height: 45px;
+      margin: 5px;
       border: none;
-      margin-right: 10px;
       border-radius: 50%;
-      background: linear-gradient(145deg, #9a40a9, #b74cc9);
-      box-shadow: inset 20px 20px 60px #913ca0, inset -20px -20px 60px #c552d8;
+      font-size: 18px;
+      color: #fff;
+      transition: 0.4s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background: #363333;
+      box-shadow: 0 0 10px rgba(255,255,255,0.1);
     }
 
-    .neo-button:active {
-      background: #AB47BC;
-      box-shadow: 28px 28px 57px #933da2, -28px -28px 57px #c351d6;
+    .neo-button::before {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: -4px;
+      right: -4px;
+      bottom: -4px;
+      border-radius: 50%;
+      z-index: -1;
+      transition: 0.5s;
+      filter: blur(8px);
+      opacity: 0;
+    }
+
+    .neo-button:hover::before {
+      opacity: 1;
+    }
+
+    .neo-button:hover {
+      transform: scale(1.15);
+      color: #fff;
     }
 
     .profile_button {
@@ -77,11 +98,17 @@
       transform: scale(1.05);
     }
 
-    .fa-facebook { color: #0165E1 }
-    .fa-linkedin { color: #0A66C2 }
-    .fa-google { color: #dc4e41 }
-    .fa-github { color: #000000 }
-    .fa-twitter { color: #55acee }
+    .fa-facebook  { color: #1877f2; }
+    .fa-linkedin  { color: #0a66c2; }
+    .fa-google    { color: #db4437; }
+    .fa-github    { color: #ffffff; }
+    .fa-twitter   { color: #1da1f2; }
+
+    .neo-button:hover .fa-facebook  { text-shadow: 0 0 8px #1877f2; }
+    .neo-button:hover .fa-linkedin  { text-shadow: 0 0 8px #0a66c2; }
+    .neo-button:hover .fa-google    { text-shadow: 0 0 8px #db4437; }
+    .neo-button:hover .fa-github    { text-shadow: 0 0 8px #ffffff; }
+    .neo-button:hover .fa-twitter   { text-shadow: 0 0 8px #1da1f2; }
 
     .num {
       font-weight: bold;
@@ -134,7 +161,7 @@
           <button class="neo-button" onclick="window.open('https://www.facebook.com/share/19NtCTDC2s/','_blank')"><i class="fa fa-facebook"></i></button>
           <button class="neo-button" onclick="window.open('https://www.linkedin.com/in/athul-k-4107b5180','_blank')"><i class="fa fa-linkedin"></i></button>
           <button class="neo-button" onclick="window.open('mailto:athulk666@gmail.com')"><i class="fa fa-google"></i></button>
-          <button class="neo-button" onclick="window.open('https://https://github.com/athulknr','_blank')"><i class="fa fa-github"></i></button>
+          <button class="neo-button" onclick="window.open('https://github.com/athulknr','_blank')"><i class="fa fa-github"></i></button>
           <button class="neo-button" onclick="window.open('https://x.com/ATHULK499971','_blank')"><i class="fa fa-twitter"></i></button>
         </div>
 
